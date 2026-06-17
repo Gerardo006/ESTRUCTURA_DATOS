@@ -91,4 +91,8 @@ if (saldo > 0) {
 let nombre = 'Fernando'
 if (nombre=== 'Fernando') {
     console.log('Hola, Fernando')
+} else if (nombre === 'Cristian') {
+    console.log('Hola, Cristian')
+}else {
+    console.log('No encontre tu nombre')
 }
