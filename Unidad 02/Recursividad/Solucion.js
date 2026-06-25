@@ -1,11 +1,6 @@
 
-/* ============================================================================
-   SECCIÓN 1: CALENTAMIENTO NUMÉRICO (NIVEL BÁSICO)
-   ============================================================================ */
-
-/* ---------------------------------------------------------------------------
-   Ejercicio 1.1: Suma de Dígitos de un Número
-   --------------------------------------------------------------------------- */
+//Ejercicio 1.1: Suma de Dígitos de un Número
+   
 function sumaDigitos(n) {
     // Caso Base: si el número tiene un solo dígito (0-9),
     // la suma de sus dígitos es el número mismo.
@@ -28,10 +23,8 @@ console.assert(sumaDigitos(0) === 0, "Error en sumaDigitos(0)");
 console.assert(sumaDigitos(9) === 9, "Error en sumaDigitos(9)");
 console.log("Ejercicio 1.1 superado.");
 
-
-/* ---------------------------------------------------------------------------
-   Ejercicio 1.2: Potencia Recursiva (Exponenciación Binaria / Exponente Rápido)
-   --------------------------------------------------------------------------- */
+//Ejercicio 1.2: Potencia Recursiva (Exponenciación Binaria / Exponente Rápido)
+   
 function potencia(base, exponente) {
     // Caso Base: cualquier número elevado a 0 es 1.
     if (exponente === 0) {
@@ -65,9 +58,6 @@ console.assert(potencia(7, 0) === 1, "Error en potencia(7, 0)");
 console.log("Ejercicio 1.2 superado.");
 
 
-/* ============================================================================
-   SECCIÓN 2: RECURSIVIDAD EN ESTRUCTURAS LINEALES (NIVEL INTERMEDIO)
-   ============================================================================ */
 
 /* ---------------------------------------------------------------------------
    Ejercicio 2.1: Inversión de un Arreglo (In-Place)
@@ -132,10 +122,6 @@ console.assert(busquedaBinariaRecursiva(datosOrdenados, 100, 0, 9) === -1);
 console.log("Ejercicio 2.2 superado.");
 
 
-/* ============================================================================
-   SECCIÓN 3: ESTRUCTURAS NO LINEALES Y ALGORITMOS AVANZADOS (NIVEL AVANZADO)
-   ============================================================================ */
-
 /* ---------------------------------------------------------------------------
    Ejercicio 3.1: Recorridos de Árboles Binarios
    --------------------------------------------------------------------------- */
@@ -192,14 +178,7 @@ function recorridoPostorden(raiz) {
     ];
 }
 
-// Casos de prueba para validación
-//
-//            4
-//          /   \
-//         2     6
-//        / \   / \
-//       1   3 5   7
-//
+
 const raizArbol = new NodoArbol(4);
 raizArbol.izquierdo = new NodoArbol(2);
 raizArbol.derecho = new NodoArbol(6);
@@ -222,11 +201,6 @@ console.assert(
 );
 console.log("Ejercicio 3.1 superado.");
 
-
-/* ============================================================================
-   SECCIÓN 4: ANÁLISIS TEÓRICO Y DE RENDIMIENTO
-   (Código de apoyo para la Pregunta 4.1 y solución de la Pregunta 4.3)
-   ============================================================================ */
 
 /* ---------------------------------------------------------------------------
    Pregunta 4.1: Fibonacci recursivo "ingenuo" (código de referencia)
